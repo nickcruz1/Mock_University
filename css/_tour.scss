@@ -1,0 +1,141 @@
+// Tour Section //
+
+.toursContainer {
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+  grid-template-columns: auto;
+  flex-direction: column;
+}
+
+#toursbackground {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto;
+  padding: 0 0 0 0;
+  background: linear-gradient(
+      to right,
+      rgba(9, 1, 123, 0.6),
+      rgba(9, 1, 123, 0.6)
+    ),
+    url("../assets/aboutUs.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 140vh;
+}
+
+.tourDetails {
+  color: white;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+input {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 100%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+select {
+  margin: 0;
+  padding: 1rem;
+}
+
+input[submit] {
+  width: 100%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+input:hover {
+  background-color: green;
+}
+
+#tourTitle {
+  text-align: center;
+  padding-top: 12rem;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.tourSubmit {
+  width: 100%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 1rem;
+  color: white;
+  padding: 2rem;
+  border-radius: 0;
+  font-size: 1.5rem;
+  border: 1px solid white;
+}
+
+.tourInput {
+  width: 100% !important;
+}
+
+.tourSubmit:hover {
+  background-color: green;
+}
+
+#tour {
+  background-color: blue;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto;
+  padding: 4rem 0 4rem 0;
+  background: linear-gradient(
+      to right,
+      rgba(9, 1, 123, 0.6),
+      rgba(9, 1, 123, 0.6)
+    ),
+    url("../assets/campus.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.tourTitle {
+  font-size: $mediumSize;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.tourPara {
+  font-size: 2rem;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.tourBtn {
+  font-size: 2rem;
+  padding: 1rem;
+  color: white;
+  border: 1px solid white;
+}
+
+.tourBtn:hover {
+  background-color: green;
+}
+
+// Media Queries //
+@media screen and (min-width: 768px) {
+  .tourTitle {
+    font-size: $largeSize;
+  }
+
+  .aboutPara {
+    font-size: 3rem;
+  }
+
+  .aboutBtn {
+    font-size: 3rem;
+  }
+}

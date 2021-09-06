@@ -1,0 +1,40 @@
+// About Section //
+
+#about {
+  background-color: lightgray;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto;
+  padding: 4rem 0 4rem 0;
+}
+
+.aboutTitle {
+  font-size: $largeSize;
+  padding-bottom: 1rem;
+}
+
+.aboutPara {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.aboutBtn {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+// Media Queries //
+@media screen and (max-width: 768px) {
+  .aboutTitle {
+    font-size: $mediumSize;
+    padding-bottom: 1rem;
+  }
+
+  .aboutPara {
+    font-size: 2rem;
+  }
+
+  .aboutBtn {
+    font-size: 2rem;
+  }
+}

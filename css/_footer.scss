@@ -1,0 +1,177 @@
+// Footer Section //
+
+#footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bigfooterList {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footerItem {
+  color: white;
+}
+
+.footerItemLink {
+  color: white;
+}
+
+.footerItemLink:hover {
+  color: blue;
+  transition: 200ms;
+}
+
+.footerList1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.footerList2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+/* Social Media Tags */
+
+.socialMedia {
+  font-size: $largeSize;
+  color: white;
+}
+
+.socialContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#facebook {
+  color: rgb(147, 147, 245);
+  font-size: $largeSize;
+}
+
+#facebook:hover {
+  transform: translateY(-20px);
+  transition: 200ms ease-in-out;
+}
+
+#twitter {
+  color: aqua;
+  font-size: $largeSize;
+}
+
+#twitter:hover {
+  transform: translateY(-20px);
+  transition: 200ms ease-in-out;
+}
+
+#linkedin {
+  color: rgb(3, 3, 94);
+  font-size: $largeSize;
+}
+
+#linkedin:hover {
+  transform: translateY(-20px);
+  transition: 200ms ease-in-out;
+}
+
+#snapchat {
+  color: yellow;
+  font-size: $largeSize;
+}
+
+#snapchat:hover {
+  transform: translateY(-20px);
+  transition: 200ms ease-in-out;
+}
+
+#instagram {
+  color: purple;
+  font-size: $largeSize;
+}
+
+#instagram:hover {
+  transform: translateY(-20px);
+  transition: 200ms ease-in-out;
+}
+
+// Media Queries //
+
+@media screen and (max-width: 767px) {
+  .socialMedia {
+    font-size: 3rem;
+    color: white;
+  }
+  #facebook {
+    font-size: $mediumSize;
+  }
+  #twitter {
+    font-size: $mediumSize;
+  }
+  #instagram {
+    font-size: $mediumSize;
+  }
+  #linkedin {
+    font-size: $mediumSize;
+  }
+  #snapchat {
+    font-size: $mediumSize;
+  }
+  .footerItem {
+    font-size: $smallSize;
+  }
+
+  .footerItemLink {
+    font-size: $smallSize;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .socialMedia {
+    font-size: 5rem;
+    color: white;
+  }
+  #facebook {
+    font-size: $largeSize;
+  }
+  #twitter {
+    font-size: $largeSize;
+  }
+  #instagram {
+    font-size: $largeSize;
+  }
+  #linkedin {
+    font-size: $largeSize;
+  }
+  #snapchat {
+    font-size: $largeSize;
+  }
+  .footerItem {
+    font-size: 3.5rem;
+  }
+
+  .footerItemLink {
+    font-size: 3.5rem;
+  }
+}

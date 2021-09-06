@@ -1,0 +1,210 @@
+// Showcase Section //
+
+// Home Page Showcase //
+#showcase {
+  width: 100vw;
+  height: 80vh;
+  background: linear-gradient(
+      to right,
+      rgba(9, 1, 123, 0.5),
+      rgba(9, 1, 123, 0.5)
+    ),
+    url("../assets/contactUniversity.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+// Programs Page Showcase //
+.programsShowcase {
+  background: linear-gradient(
+      to right,
+      rgba(9, 1, 123, 0.5),
+      rgba(9, 1, 123, 0.5)
+    ),
+    url("../assets/lecturehall2.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+// Tours Page Showcase //
+.toursShowcase {
+  background: linear-gradient(
+      to right,
+      rgba(9, 1, 123, 0.5),
+      rgba(9, 1, 123, 0.5)
+    ),
+    url("../assets/universityArea.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+// Enroll Page Showcase //
+.enrollShowcase {
+  background: linear-gradient(
+      to right,
+      rgba(9, 1, 123, 0.5),
+      rgba(9, 1, 123, 0.5)
+    ),
+    url("../assets/universityGate.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+// Cost Page Showcase //
+.costShowcase {
+  background: linear-gradient(
+      to right,
+      rgba(9, 1, 123, 0.5),
+      rgba(9, 1, 123, 0.5)
+    ),
+    url("../assets/universityTour.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+// About Page Showcase //
+.aboutShowcase {
+  background: linear-gradient(
+      to right,
+      rgba(9, 1, 123, 0.5),
+      rgba(9, 1, 123, 0.5)
+    ),
+    url("../assets/universityLibrary.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header {
+  grid-area: header;
+  font-size: 5rem;
+  color: white;
+}
+
+.slogan {
+  grid-area: slogan;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.enroll {
+  grid-area: enroll;
+  background-color: blue;
+  border: 2px solid black;
+  color: white;
+  font-size: 2rem;
+}
+
+.enroll:hover {
+  color: white;
+  background-color: green;
+}
+
+.learnMore {
+  grid-area: learnMore;
+  background-color: blue;
+  border: 2px solid black;
+  color: white;
+  font-size: 2rem;
+}
+
+.learnMore:hover {
+  color: white;
+  background-color: green;
+}
+
+.grid-container {
+  width: 100vw;
+  height: 80vh;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-areas:
+    "header header header header header header"
+    "slogan slogan slogan slogan slogan slogan"
+    "enroll enroll enroll learnMore learnMore learnMore";
+  align-content: center;
+}
+
+.grid-container > div,
+a {
+  background-color: transparent;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+// Media Queries //
+
+@media screen and (min-width: 368px) {
+  .header {
+    font-size: 5.5rem;
+  }
+
+  .slogan {
+    font-size: 4rem;
+  }
+
+  .enroll {
+    font-size: 2.5rem;
+  }
+
+  .learnMore {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    font-size: 6.5rem !important;
+  }
+
+  .slogan {
+    font-size: 5rem !important;
+  }
+
+  .enroll {
+    font-size: 3rem !important;
+  }
+
+  .learnMore {
+    font-size: 3rem !important;
+  }
+
+  .programsShowcase {
+    font-size: 7rem;
+  }
+  
+  // Tours Page Showcase //
+  .toursShowcase {
+    font-size: 7rem;
+  }
+  
+  // Enroll Page Showcase //
+  .enrollShowcase {
+    font-size: 7rem;
+  }
+  
+  // Cost Page Showcase //
+  .costShowcase {
+font-size: 7rem;
+  }
+  
+  // About Page Showcase //
+  .aboutShowcase {
+    font-size: 7rem;
+  }
+}

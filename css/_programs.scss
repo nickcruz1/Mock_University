@@ -1,0 +1,40 @@
+// Programs Section //
+
+.programContainer {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.innerPrograms {
+  margin: 3rem;
+}
+
+.programsTitle {
+  font-size: $mediumSize;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.programsCard {
+  border: 1px solid black;
+  width: auto;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 2rem;
+}
+
+.cardTitle {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.cardPara {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}

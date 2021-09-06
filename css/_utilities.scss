@@ -1,0 +1,60 @@
+// Utilities File //
+
+body {
+  background-color: blue;
+  font-family: Oswald;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: $dark-color;
+}
+
+h2 {
+  @extend h1;
+}
+
+p {
+  @extend h1;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  width: 100px;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+button:hover {
+  color: white;
+  background-color: blue;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.fas,
+.far {
+  color: black;
+  font-size: 3rem !important;
+  margin-top: 2rem;
+}
+
+i {
+  color: darkgray;
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+i:hover {
+  cursor: pointer;
+  color: aqua;
+  transition: 500ms;
+}

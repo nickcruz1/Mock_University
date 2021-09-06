@@ -1,0 +1,48 @@
+// Reset File //
+
+*,
+html,
+body,
+section,
+aside,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+a,
+video,
+img,
+audio,
+ul,
+li,
+article,
+b,
+blockquote,
+caption,
+code,
+data,
+em,
+fieldset,
+header,
+footer,
+form,
+input,
+iframe,
+label,
+nav,
+pre,
+select,
+table,
+textarea {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
