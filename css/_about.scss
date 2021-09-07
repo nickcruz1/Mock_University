@@ -18,9 +18,35 @@
   padding-bottom: 1rem;
 }
 
+.aboutBigPara {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  margin-left: 25%;
+  margin-right: 25%;
+  color: white;
+  text-align: left;
+}
+
 .aboutBtn {
   font-size: 3rem;
   padding: 1rem;
+}
+
+.aboutTitle {
+  text-align: left;
+  color: white;
+  margin-left: 25%;
+}
+
+.aboutListItem {
+  text-align: left;
+  color: white;
+  margin-left: 25%;
+}
+
+.aboutSpan {
+  color: lightgreen;
+  font-size: 3.5rem;
 }
 
 // Media Queries //

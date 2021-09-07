@@ -416,8 +416,8 @@ a {
 }
 
 .aboutShowcase {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(9, 1, 123, 0.5)), to(rgba(9, 1, 123, 0.5))), url("../assets/universityLibrary.jpeg");
-  background: linear-gradient(to right, rgba(9, 1, 123, 0.5), rgba(9, 1, 123, 0.5)), url("../assets/universityLibrary.jpeg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(9, 1, 123, 0.5)), to(rgba(9, 1, 123, 0.5))), url("../assets/students.jpeg");
+  background: linear-gradient(to right, rgba(9, 1, 123, 0.5), rgba(9, 1, 123, 0.5)), url("../assets/students.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -627,9 +627,35 @@ a {
   padding-bottom: 1rem;
 }
 
+.aboutBigPara {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  margin-left: 25%;
+  margin-right: 25%;
+  color: white;
+  text-align: left;
+}
+
 .aboutBtn {
   font-size: 3rem;
   padding: 1rem;
+}
+
+.aboutTitle {
+  text-align: left;
+  color: white;
+  margin-left: 25%;
+}
+
+.aboutListItem {
+  text-align: left;
+  color: white;
+  margin-left: 25%;
+}
+
+.aboutSpan {
+  color: lightgreen;
+  font-size: 3.5rem;
 }
 
 @media screen and (max-width: 768px) {
