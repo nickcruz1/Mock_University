@@ -617,6 +617,12 @@ a {
   padding: 4rem 0 4rem 0;
 }
 
+.homeaboutTitle {
+  font-size: 6rem;
+  padding-bottom: 1rem;
+  color: black;
+}
+
 .aboutTitle {
   font-size: 6rem;
   padding-bottom: 1rem;
@@ -658,7 +664,25 @@ a {
   font-size: 3.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .aboutTitle {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+  }
+  .homeaboutTitle {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: black;
+  }
+  .aboutPara {
+    font-size: 2rem;
+  }
+  .aboutBtn {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .aboutTitle {
     font-size: 4rem;
     padding-bottom: 1rem;
@@ -1240,9 +1264,19 @@ input:hover {
   margin: 3rem;
 }
 
-.programsTitle {
-  font-size: 4rem;
+.programheader {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: header;
+  font-size: 6rem !important;
   color: white;
+}
+
+.programsTitle {
+  font-size: 5rem;
+  color: black;
+  background-color: white;
   margin: 0;
   padding: 0;
 }

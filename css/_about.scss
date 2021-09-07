@@ -8,6 +8,12 @@
   padding: 4rem 0 4rem 0;
 }
 
+.homeaboutTitle {
+  font-size: $largeSize;
+  padding-bottom: 1rem;
+  color: black;
+}
+
 .aboutTitle {
   font-size: $largeSize;
   padding-bottom: 1rem;
@@ -50,7 +56,27 @@
 }
 
 // Media Queries //
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .aboutTitle {
+    font-size: $mediumSize;
+    padding-bottom: 1rem;
+  }
+  .homeaboutTitle {
+    font-size: $mediumSize;
+    padding-bottom: 1rem;
+    color: black;
+  }
+
+  .aboutPara {
+    font-size: 2rem;
+  }
+
+  .aboutBtn {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .aboutTitle {
     font-size: $mediumSize;
     padding-bottom: 1rem;

@@ -12,9 +12,16 @@
   margin: 3rem;
 }
 
-.programsTitle {
-  font-size: $mediumSize;
+.programheader {
+  grid-area: header;
+  font-size: 6rem !important;
   color: white;
+}
+
+.programsTitle {
+  font-size: 5rem;
+  color: black;
+  background-color: white;
   margin: 0;
   padding: 0;
 }
