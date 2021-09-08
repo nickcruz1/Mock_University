@@ -10,7 +10,7 @@
 a.mainLogo:hover {
   background-color: green !important;
   color: white !important;
-  user-select: none !important;
+  user-select: none;
 }
 
 .topnav {
@@ -42,17 +42,14 @@ a.mainLogo:hover {
   color: black;
 }
 
-.icon {
-  margin-bottom: -2rem;
-}
-
 a.icon {
+  margin-bottom: -2rem;
   display: none;
 }
 
 a.icon:hover {
-  background-color: transparent;
-  color: white;
+  color: aqua !important;
+  background-color: transparent !important;
 }
 
 #topnavItem {
@@ -60,15 +57,19 @@ a.icon:hover {
 }
 
 .navitem:hover {
-  background-color: white !important;
-  color: black !important;
+  background-color: white;
+  color: black;
 }
 
 /* Media Queries */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav.responsive {
     position: fixed;
+  }
+
+  #navIcon {
+    display: hidden !important;
   }
   .topnav.responsive .icon {
     position: absolute;
@@ -76,12 +77,12 @@ a.icon:hover {
     top: 0;
   }
   .topnav.responsive a {
-    float: none;
+    float: none !important;
     display: block;
     text-align: left;
   }
   .mainLogo {
-    display: none !important;
+    display: none;
   }
   .topnav a {
     display: none;
@@ -92,7 +93,7 @@ a.icon:hover {
     padding-top: 5rem;
   }
   a#topnavItem {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
 
   a#topnavItem {

@@ -30,6 +30,12 @@
   background-attachment: fixed;
 }
 
+.programHeader {
+  grid-area: header;
+  font-size: 5rem;
+  color: white;
+}
+
 // Tours Page Showcase //
 .toursShowcase {
   background: linear-gradient(
@@ -42,6 +48,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.tourHeader {
+  grid-area: header;
+  font-size: 5rem;
+  color: white;
 }
 
 // Enroll Page Showcase //
@@ -58,6 +70,12 @@
   background-attachment: fixed;
 }
 
+.enrollHeader {
+  grid-area: header;
+  font-size: 5rem;
+  color: white;
+}
+
 // Cost Page Showcase //
 .costShowcase {
   background: linear-gradient(
@@ -72,6 +90,12 @@
   background-attachment: fixed;
 }
 
+.costHeader {
+  grid-area: header;
+  font-size: 5rem;
+  color: white;
+}
+
 // About Page Showcase //
 .aboutShowcase {
   background: linear-gradient(
@@ -84,6 +108,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.aboutHeader {
+  grid-area: header;
+  font-size: 5rem;
+  color: white;
 }
 
 .header {
@@ -103,7 +133,7 @@
   background-color: blue;
   border: 2px solid black;
   color: white;
-  font-size: 2rem;
+  align-items: center;
   padding: 0.5rem;
 }
 
@@ -117,7 +147,7 @@
   background-color: blue;
   border: 2px solid black;
   color: white;
-  font-size: 2rem;
+  align-items: center;
   padding: 0.5rem;
 }
 
@@ -133,8 +163,6 @@
   padding: 0;
   display: grid;
   justify-content: space-evenly;
-  grid-template-columns: 50px;
-  grid-template-rows: 25% 25% 60px;
   grid-template-areas:
     "header header header header header header"
     "slogan slogan slogan slogan slogan slogan"
@@ -156,6 +184,26 @@ a {
 @media screen and (min-width: 368px) {
   .header {
     font-size: 6rem;
+  }
+
+  .programHeader {
+    font-size: 6.5rem !important;
+  }
+
+  .enrollHeader {
+    font-size: 6.5rem !important;
+  }
+
+  .aboutHeader {
+    font-size: 6.5rem !important;
+  }
+
+  .tourHeader {
+    font-size: 6.5rem !important;
+  }
+
+  .costHeader {
+    font-size: 6.5rem !important;
   }
 
   .slogan {
@@ -188,6 +236,27 @@ a {
     font-size: 3rem !important;
   }
 
+  .costHeader {
+    font-size: 11rem !important;
+  }
+
+  .enrollHeader {
+    font-size: 11rem !important;
+  }
+
+  .aboutHeader {
+    font-size: 11rem !important;
+  }
+
+  .tourHeader {
+    font-size: 11rem !important;
+  }
+
+  .programHeader {
+    font-size: 11rem !important;
+  }
+
+  // Programs Page Showcase //
   .programsShowcase {
     font-size: 7rem;
   }

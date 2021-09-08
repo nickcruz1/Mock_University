@@ -59,10 +59,10 @@ html {
 a.mainLogo:hover {
   background-color: green !important;
   color: white !important;
-  -webkit-user-select: none !important;
-     -moz-user-select: none !important;
-      -ms-user-select: none !important;
-          user-select: none !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .topnav {
@@ -96,17 +96,14 @@ a.mainLogo:hover {
   color: black;
 }
 
-.icon {
-  margin-bottom: -2rem;
-}
-
 a.icon {
+  margin-bottom: -2rem;
   display: none;
 }
 
 a.icon:hover {
-  background-color: transparent;
-  color: white;
+  color: aqua !important;
+  background-color: transparent !important;
 }
 
 #topnavItem {
@@ -114,14 +111,17 @@ a.icon:hover {
 }
 
 .navitem:hover {
-  background-color: white !important;
-  color: black !important;
+  background-color: white;
+  color: black;
 }
 
 /* Media Queries */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav.responsive {
     position: fixed;
+  }
+  #navIcon {
+    display: hidden !important;
   }
   .topnav.responsive .icon {
     position: absolute;
@@ -129,12 +129,12 @@ a.icon:hover {
     top: 0;
   }
   .topnav.responsive a {
-    float: none;
+    float: none !important;
     display: block;
     text-align: left;
   }
   .mainLogo {
-    display: none !important;
+    display: none;
   }
   .topnav a {
     display: none;
@@ -145,7 +145,7 @@ a.icon:hover {
     padding-top: 5rem;
   }
   a#topnavItem {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
   a#topnavItem {
     color: white;
@@ -388,6 +388,15 @@ a {
   background-attachment: fixed;
 }
 
+.programHeader {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: header;
+  font-size: 5rem;
+  color: white;
+}
+
 .toursShowcase {
   background: -webkit-gradient(linear, left top, right top, from(rgba(9, 1, 123, 0.5)), to(rgba(9, 1, 123, 0.5))), url("../assets/universityArea.jpeg");
   background: linear-gradient(to right, rgba(9, 1, 123, 0.5), rgba(9, 1, 123, 0.5)), url("../assets/universityArea.jpeg");
@@ -395,6 +404,15 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.tourHeader {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: header;
+  font-size: 5rem;
+  color: white;
 }
 
 .enrollShowcase {
@@ -406,6 +424,15 @@ a {
   background-attachment: fixed;
 }
 
+.enrollHeader {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: header;
+  font-size: 5rem;
+  color: white;
+}
+
 .costShowcase {
   background: -webkit-gradient(linear, left top, right top, from(rgba(9, 1, 123, 0.5)), to(rgba(9, 1, 123, 0.5))), url("../assets/universityTour.jpeg");
   background: linear-gradient(to right, rgba(9, 1, 123, 0.5), rgba(9, 1, 123, 0.5)), url("../assets/universityTour.jpeg");
@@ -415,6 +442,15 @@ a {
   background-attachment: fixed;
 }
 
+.costHeader {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: header;
+  font-size: 5rem;
+  color: white;
+}
+
 .aboutShowcase {
   background: -webkit-gradient(linear, left top, right top, from(rgba(9, 1, 123, 0.5)), to(rgba(9, 1, 123, 0.5))), url("../assets/students.jpeg");
   background: linear-gradient(to right, rgba(9, 1, 123, 0.5), rgba(9, 1, 123, 0.5)), url("../assets/students.jpeg");
@@ -422,6 +458,15 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.aboutHeader {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: header;
+  font-size: 5rem;
+  color: white;
 }
 
 .header {
@@ -450,7 +495,9 @@ a {
   background-color: blue;
   border: 2px solid black;
   color: white;
-  font-size: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0.5rem;
 }
 
@@ -467,7 +514,9 @@ a {
   background-color: blue;
   border: 2px solid black;
   color: white;
-  font-size: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0.5rem;
 }
 
@@ -486,10 +535,6 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -ms-grid-columns: 50px;
-      grid-template-columns: 50px;
-  -ms-grid-rows: 25% 25% 60px;
-      grid-template-rows: 25% 25% 60px;
       grid-template-areas: "header header header header header header" "slogan slogan slogan slogan slogan slogan" "enroll enroll enroll learnMore learnMore learnMore";
   -ms-flex-line-pack: center;
       align-content: center;
@@ -507,6 +552,21 @@ a {
 @media screen and (min-width: 368px) {
   .header {
     font-size: 6rem;
+  }
+  .programHeader {
+    font-size: 6.5rem !important;
+  }
+  .enrollHeader {
+    font-size: 6.5rem !important;
+  }
+  .aboutHeader {
+    font-size: 6.5rem !important;
+  }
+  .tourHeader {
+    font-size: 6.5rem !important;
+  }
+  .costHeader {
+    font-size: 6.5rem !important;
   }
   .slogan {
     font-size: 4rem;
@@ -531,6 +591,21 @@ a {
   }
   .learnMore {
     font-size: 3rem !important;
+  }
+  .costHeader {
+    font-size: 11rem !important;
+  }
+  .enrollHeader {
+    font-size: 11rem !important;
+  }
+  .aboutHeader {
+    font-size: 11rem !important;
+  }
+  .tourHeader {
+    font-size: 11rem !important;
+  }
+  .programHeader {
+    font-size: 11rem !important;
   }
   .programsShowcase {
     font-size: 7rem;
@@ -878,10 +953,10 @@ i:hover {
 
 .costTitle2 {
   text-align: left;
-  padding: 0;
+  padding-top: 1rem;
   font-size: 4rem;
   color: white;
-  line-height: 50px;
+  line-height: 40px;
 }
 
 .costBtn {
@@ -999,7 +1074,7 @@ tr:nth-child(odd) {
   table {
     width: 50% !important;
     margin-right: 25% !important;
-    margin-left: 25% !important;
+    margin-left: 15% !important;
   }
 }
 
