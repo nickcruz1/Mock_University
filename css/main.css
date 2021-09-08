@@ -68,7 +68,7 @@ a.mainLogo:hover {
 .topnav {
   overflow: hidden;
   background-color: blue;
-  border-bottom: 1px solid white;
+  border-bottom: 5px solid white;
   position: fixed;
   width: 100vw;
   margin-top: -5rem;
@@ -438,7 +438,7 @@ a {
   -ms-grid-column: 1;
   -ms-grid-column-span: 6;
   grid-area: slogan;
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: white;
 }
 
@@ -451,6 +451,7 @@ a {
   border: 2px solid black;
   color: white;
   font-size: 2rem;
+  padding: 0.5rem;
 }
 
 .enroll:hover {
@@ -467,6 +468,7 @@ a {
   border: 2px solid black;
   color: white;
   font-size: 2rem;
+  padding: 0.5rem;
 }
 
 .learnMore:hover {
@@ -484,6 +486,10 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-grid-columns: 50px;
+      grid-template-columns: 50px;
+  -ms-grid-rows: 25% 25% 60px;
+      grid-template-rows: 25% 25% 60px;
       grid-template-areas: "header header header header header header" "slogan slogan slogan slogan slogan slogan" "enroll enroll enroll learnMore learnMore learnMore";
   -ms-flex-line-pack: center;
       align-content: center;
@@ -493,14 +499,14 @@ a {
 a {
   background-color: transparent;
   text-align: center;
-  padding: 10px 0;
+  padding: 0;
   font-size: 30px;
   text-decoration: none;
 }
 
 @media screen and (min-width: 368px) {
   .header {
-    font-size: 5.5rem;
+    font-size: 6rem;
   }
   .slogan {
     font-size: 4rem;
