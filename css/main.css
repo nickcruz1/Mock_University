@@ -1370,6 +1370,11 @@ input:hover {
   margin-bottom: 2rem;
 }
 
+i.fas:hover {
+  color: black;
+  cursor: default;
+}
+
 .cardTitle {
   font-size: 3rem;
   margin: 0;
