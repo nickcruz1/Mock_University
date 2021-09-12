@@ -11,10 +11,12 @@ function myFunction() {
   }
 }
 
+// Semester CountDown // 
 
-// This is code for Semester Countdown Timer // 
-/*
+
 // Set the date we're counting down to
+function countDown() {
+
 var countDownDate = new Date("November 24, 2021 12:00:00").getTime();
 
 // Update the count down every 1 second
@@ -39,7 +41,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("clock").innerHTML = "THE SEMESTER HAS STARTED";
+    document.getElementById("clock").innerHTML = "THE SEMESTER IS OVER";
   }
-}, );
-*/
+}, )
+};

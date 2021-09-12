@@ -4,6 +4,7 @@
 #showcase {
   width: 100vw;
   height: 80vh;
+  line-height: 80px;
   background: linear-gradient(
       to right,
       rgba(9, 1, 123, 0.5),
@@ -125,7 +126,7 @@
 .slogan {
   grid-area: slogan;
   font-size: 4rem;
-  color: white;
+  color: aqua;
 }
 
 .enroll {
@@ -133,13 +134,16 @@
   background-color: blue;
   border: 2px solid black;
   color: white;
-  align-items: center;
-  padding: 0.5rem;
+  padding: 0rem;
+  border-radius: 20px;
+  align-self: center;
+  margin: 1rem;
 }
 
 .enroll:hover {
   color: white;
   background-color: green;
+  border: 1px solid white;
 }
 
 .learnMore {
@@ -147,18 +151,22 @@
   background-color: blue;
   border: 2px solid black;
   color: white;
-  align-items: center;
-  padding: 0.5rem;
+  padding: 0rem;
+  border-radius: 20px;
+  align-self: center;
+  margin: 1rem;
 }
 
 .learnMore:hover {
   color: white;
   background-color: green;
+  border: 1px solid white;
 }
 
 .grid-container {
   width: 100vw;
   height: 80vh;
+  line-height: 70px;
   margin: 0;
   padding: 0;
   display: grid;
@@ -181,9 +189,40 @@ a {
 
 // Media Queries //
 
+@media screen and (max-width: 320px) {
+  .enroll {
+    font-size: 1.8rem;
+  }
+
+  .learnMore {
+    font-size: 1.8rem;
+  }
+
+  #showcase {
+    width: 100vw;
+    height: 70vh;
+    line-height: 80px;
+  }
+
+  .grid-container {
+    width: 100vw;
+    height: 80vh;
+    line-height: 70px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-areas:
+      "header header header header header header"
+      "slogan slogan slogan slogan slogan slogan"
+      "enroll enroll enroll learnMore learnMore learnMore";
+    align-content: center;
+  }
+}
+
 @media screen and (min-width: 368px) {
   .header {
-    font-size: 6rem;
+    font-size: 5rem !important;
   }
 
   .programHeader {
@@ -212,6 +251,8 @@ a {
 
   .enroll {
     font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
   }
 
   .learnMore {
