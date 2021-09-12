@@ -1,0 +1,133 @@
+// FAQ Section //
+
+// Frequently Asked Questions //
+
+div.content {
+  background-color: transparent;
+  color: black;
+  text-align: center;
+}
+
+.faqContent {
+  color: white;
+  background-color: blue;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+}
+
+#faqTitle {
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: $mediumSize;
+  padding-top: $smallSize;
+  padding-bottom: $smallSize;
+}
+
+.faqbigContainer {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding-bottom: $smallSize;
+  user-select: none;
+}
+
+.faqsmallContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  user-select: none;
+}
+
+.innerfaq {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  flex: 100%;
+  border: 1px solid blue;
+  color: white;
+  background-color: white;
+}
+
+.innerfaq:hover {
+  background-color: blue;
+  color: white !important;
+  cursor: pointer;
+}
+
+.collapsible {
+  color: darkgray;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+  width: 600px;
+}
+
+.collapsible:hover {
+  color: white;
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  color: white;
+  margin-right: 25%;
+  width: 100%;
+}
+
+// Understand //
+
+#faq1 {
+  cursor: default;
+}
+
+#faq2 {
+  @extend #faq1;
+}
+
+#faq3 {
+  @extend #faq1;
+}
+
+#faq4 {
+  @extend #faq1;
+}
+
+#faq5 {
+  @extend #faq1;
+}
+
+#faq6 {
+  @extend #faq1;
+}
+
+.innerfaq p:hover {
+  color: white;
+}
+
+.innerfaq p {
+  display: inline-flex;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .collapsible {
+    width: 1300px;
+  }
+  #faqTitle {
+    font-size: $largeSize;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .collapsible {
+    width: 1600px;
+  }
+}
