@@ -1,0 +1,58 @@
+// Next Round of Classes //
+
+#nextSemester {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto;
+  padding: 4rem 0 0 0;
+  border: 1px solid white;
+  background: linear-gradient(
+      to right,
+      rgba(9, 1, 123, 0.5),
+      rgba(9, 1, 123, 0.5)
+    ),
+    url("../assets/clock2.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 70vh;
+}
+
+.nextSemesterTitle {
+  font-size: $mediumSize;
+  margin-bottom: 0rem;
+  color: white;
+}
+
+.nextSemesterBtn {
+  font-size: 2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  color: white;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+#countDown {
+  color: white;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .nextSemesterTitle {
+    font-size: $largeSize;
+  }
+
+  .nextSemesterBtn {
+    font-size: 3rem;
+    padding: 0.5rem;
+  }
+
+  #countDown {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+  }
+}
