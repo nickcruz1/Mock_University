@@ -43,6 +43,7 @@ textarea {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 html {
@@ -73,6 +74,7 @@ a.mainLogo:hover {
   width: 100vw;
   margin-top: -5rem;
   padding-bottom: 1rem;
+  z-index: 3;
 }
 
 .topnav a {
@@ -370,8 +372,7 @@ a {
 
 #showcase {
   width: 100vw;
-  height: 80vh;
-  line-height: 80px;
+  height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(rgba(9, 1, 123, 0.5)), to(rgba(9, 1, 123, 0.5))), url("../assets/contactUniversity.jpg");
   background: linear-gradient(to right, rgba(9, 1, 123, 0.5), rgba(9, 1, 123, 0.5)), url("../assets/contactUniversity.jpg");
   background-position: center;
@@ -381,6 +382,8 @@ a {
 }
 
 .programsShowcase {
+  width: 100vw;
+  height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(rgba(9, 1, 123, 0.5)), to(rgba(9, 1, 123, 0.5))), url("../assets/lecturehall2.jpeg");
   background: linear-gradient(to right, rgba(9, 1, 123, 0.5), rgba(9, 1, 123, 0.5)), url("../assets/lecturehall2.jpeg");
   background-position: center;
@@ -390,15 +393,14 @@ a {
 }
 
 .programHeader {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
   grid-area: header;
   font-size: 5rem;
   color: white;
 }
 
 .toursShowcase {
+  width: 100vw;
+  height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(rgba(9, 1, 123, 0.5)), to(rgba(9, 1, 123, 0.5))), url("../assets/universityArea.jpeg");
   background: linear-gradient(to right, rgba(9, 1, 123, 0.5), rgba(9, 1, 123, 0.5)), url("../assets/universityArea.jpeg");
   background-position: center;
@@ -408,15 +410,14 @@ a {
 }
 
 .tourHeader {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
   grid-area: header;
   font-size: 5rem;
   color: white;
 }
 
 .enrollShowcase {
+  width: 100vw;
+  height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(rgba(9, 1, 123, 0.5)), to(rgba(9, 1, 123, 0.5))), url("../assets/universityGate.jpeg");
   background: linear-gradient(to right, rgba(9, 1, 123, 0.5), rgba(9, 1, 123, 0.5)), url("../assets/universityGate.jpeg");
   background-position: center;
@@ -426,15 +427,20 @@ a {
 }
 
 .enrollHeader {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
   grid-area: header;
   font-size: 5rem;
   color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .costShowcase {
+  width: 100vw;
+  height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(rgba(9, 1, 123, 0.5)), to(rgba(9, 1, 123, 0.5))), url("../assets/universityTour.jpeg");
   background: linear-gradient(to right, rgba(9, 1, 123, 0.5), rgba(9, 1, 123, 0.5)), url("../assets/universityTour.jpeg");
   background-position: center;
@@ -444,15 +450,14 @@ a {
 }
 
 .costHeader {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
   grid-area: header;
   font-size: 5rem;
   color: white;
 }
 
 .aboutShowcase {
+  width: 100vw;
+  height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(rgba(9, 1, 123, 0.5)), to(rgba(9, 1, 123, 0.5))), url("../assets/students.jpeg");
   background: linear-gradient(to right, rgba(9, 1, 123, 0.5), rgba(9, 1, 123, 0.5)), url("../assets/students.jpeg");
   background-position: center;
@@ -462,190 +467,155 @@ a {
 }
 
 .aboutHeader {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
   grid-area: header;
   font-size: 5rem;
   color: white;
 }
 
 .header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
   grid-area: header;
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .slogan {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
   grid-area: slogan;
   font-size: 4rem;
   color: aqua;
-}
-
-.enroll {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: enroll;
-  background-color: blue;
-  border: 2px solid black;
-  color: white;
-  padding: 0rem;
-  border-radius: 20px;
-  -ms-flex-item-align: center;
-      align-self: center;
-  margin: 1rem;
-}
-
-.enroll:hover {
-  color: white;
-  background-color: green;
-  border: 1px solid white;
-}
-
-.learnMore {
-  -ms-grid-row: 3;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 3;
-  grid-area: learnMore;
-  background-color: blue;
-  border: 2px solid black;
-  color: white;
-  padding: 0rem;
-  border-radius: 20px;
-  -ms-flex-item-align: center;
-      align-self: center;
-  margin: 1rem;
-}
-
-.learnMore:hover {
-  color: white;
-  background-color: green;
-  border: 1px solid white;
-}
-
-.grid-container {
-  width: 100vw;
-  height: 80vh;
-  line-height: 70px;
   margin: 0;
-  padding: 0;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-      grid-template-areas: "header header header header header header" "slogan slogan slogan slogan slogan slogan" "enroll enroll enroll learnMore learnMore learnMore";
-  -ms-flex-line-pack: center;
-      align-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.grid-container > div,
-a {
-  background-color: transparent;
+.mainBtn {
+  color: white;
+  background-color: blue;
+  padding: 0.5rem;
+  border: 1px solid white;
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 200px;
   text-align: center;
-  padding: 0;
-  font-size: 30px;
-  text-decoration: none;
+  font-size: 2rem;
+}
+
+.mainBtn:hover {
+  background-color: lightgreen;
+  border: 1px solid white;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  color: black;
 }
 
 @media screen and (max-width: 320px) {
-  .enroll {
-    font-size: 1.8rem;
+  div.header {
+    font-size: 2rem;
+    text-align: center;
   }
-  .learnMore {
-    font-size: 1.8rem;
+  .slogan {
+    font-size: 1.5rem;
+    text-align: center;
   }
-  #showcase {
-    width: 100vw;
-    height: 70vh;
-    line-height: 80px;
-  }
-  .grid-container {
-    width: 100vw;
-    height: 80vh;
-    line-height: 70px;
-    margin: 0;
-    padding: 0;
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-        grid-template-areas: "header header header header header header" "slogan slogan slogan slogan slogan slogan" "enroll enroll enroll learnMore learnMore learnMore";
-    -ms-flex-line-pack: center;
-        align-content: center;
+  .mainBtn {
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100px;
   }
 }
 
-@media screen and (min-width: 368px) {
-  .header {
-    font-size: 5rem !important;
-  }
-  .programHeader {
-    font-size: 6.5rem !important;
-  }
-  .enrollHeader {
-    font-size: 6.5rem !important;
-  }
-  .aboutHeader {
-    font-size: 6.5rem !important;
-  }
-  .tourHeader {
-    font-size: 6.5rem !important;
-  }
-  .costHeader {
-    font-size: 6.5rem !important;
+@media screen and (min-width: 321px) {
+  div.header {
+    font-size: 2.5rem;
+    text-align: center;
   }
   .slogan {
-    font-size: 4rem;
+    font-size: 2.2rem;
+    text-align: center;
   }
-  .enroll {
-    font-size: 2.5rem;
-    margin: 0;
-    padding: 0;
+  .mainBtn {
+    font-size: 1.5rem;
+    padding: 0.5rem;
   }
-  .learnMore {
+}
+
+@media screen and (min-width: 500px) {
+  div.header {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: -2rem;
+  }
+  .slogan {
     font-size: 2.5rem;
+    text-align: center;
+  }
+  .mainBtn {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+  }
+  div.costHeader {
+    font-size: 8rem;
+  }
+  div.enrollHeader {
+    font-size: 8rem;
+  }
+  div.aboutHeader {
+    font-size: 8rem;
+  }
+  div.tourHeader {
+    font-size: 8rem;
+  }
+  div.programHeader {
+    font-size: 8rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .header {
-    font-size: 6.5rem !important;
+  div.header {
+    font-size: 3.5rem;
+    margin-top: -1.5rem;
   }
   .slogan {
-    font-size: 5rem !important;
+    font-size: 3.2rem;
+    margin: 0;
   }
-  .enroll {
-    font-size: 3rem !important;
-  }
-  .learnMore {
-    font-size: 3rem !important;
+  .mainBtn {
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
   }
   .costHeader {
-    font-size: 11rem !important;
+    font-size: 11rem;
   }
   .enrollHeader {
-    font-size: 11rem !important;
+    font-size: 11rem;
   }
   .aboutHeader {
-    font-size: 11rem !important;
+    font-size: 11rem;
   }
   .tourHeader {
-    font-size: 11rem !important;
+    font-size: 11rem;
   }
   .programHeader {
-    font-size: 11rem !important;
+    font-size: 11rem;
   }
   .programsShowcase {
-    font-size: 7rem;
+    font-size: 11rem;
   }
   .toursShowcase {
     font-size: 7rem;
@@ -658,6 +628,23 @@ a {
   }
   .aboutShowcase {
     font-size: 7rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  div.header {
+    font-size: 6rem;
+    text-align: center;
+    margin-top: -2rem;
+  }
+  .slogan {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .mainBtn {
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
   }
 }
 
@@ -721,6 +708,15 @@ a {
   .testimonialTitle {
     font-size: 6rem;
   }
+}
+
+.aboutHeader {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #about {
@@ -960,13 +956,15 @@ i:hover {
   width: 100%;
 }
 
-.costheader {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: header;
-  font-size: 6rem !important;
+.costHeader {
+  font-size: 6rem;
   color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .title1 {
@@ -1224,6 +1222,15 @@ input[type="submit"]:hover {
   padding: 2rem 0rem 2rem 0rem;
 }
 
+.tourHeader {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .toursContainer {
   display: -ms-grid;
   display: grid;
@@ -1407,13 +1414,15 @@ input:hover {
   margin: 3rem;
 }
 
-.programheader {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: header;
-  font-size: 6rem !important;
+.programHeader {
+  font-size: 6rem;
   color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .programsTitle {

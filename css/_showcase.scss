@@ -3,8 +3,7 @@
 // Home Page Showcase //
 #showcase {
   width: 100vw;
-  height: 80vh;
-  line-height: 80px;
+  height: 100vh;
   background: linear-gradient(
       to right,
       rgba(9, 1, 123, 0.5),
@@ -19,6 +18,8 @@
 
 // Programs Page Showcase //
 .programsShowcase {
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(
       to right,
       rgba(9, 1, 123, 0.5),
@@ -39,6 +40,8 @@
 
 // Tours Page Showcase //
 .toursShowcase {
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(
       to right,
       rgba(9, 1, 123, 0.5),
@@ -59,6 +62,8 @@
 
 // Enroll Page Showcase //
 .enrollShowcase {
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(
       to right,
       rgba(9, 1, 123, 0.5),
@@ -75,10 +80,18 @@
   grid-area: header;
   font-size: 5rem;
   color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 // Cost Page Showcase //
 .costShowcase {
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(
       to right,
       rgba(9, 1, 123, 0.5),
@@ -99,6 +112,8 @@
 
 // About Page Showcase //
 .aboutShowcase {
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(
       to right,
       rgba(9, 1, 123, 0.5),
@@ -119,187 +134,163 @@
 
 .header {
   grid-area: header;
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .slogan {
   grid-area: slogan;
   font-size: 4rem;
   color: aqua;
-}
-
-.enroll {
-  grid-area: enroll;
-  background-color: blue;
-  border: 2px solid black;
-  color: white;
-  padding: 0rem;
-  border-radius: 20px;
-  align-self: center;
-  margin: 1rem;
-}
-
-.enroll:hover {
-  color: white;
-  background-color: green;
-  border: 1px solid white;
-}
-
-.learnMore {
-  grid-area: learnMore;
-  background-color: blue;
-  border: 2px solid black;
-  color: white;
-  padding: 0rem;
-  border-radius: 20px;
-  align-self: center;
-  margin: 1rem;
-}
-
-.learnMore:hover {
-  color: white;
-  background-color: green;
-  border: 1px solid white;
-}
-
-.grid-container {
-  width: 100vw;
-  height: 80vh;
-  line-height: 70px;
   margin: 0;
-  padding: 0;
-  display: grid;
-  justify-content: space-evenly;
-  grid-template-areas:
-    "header header header header header header"
-    "slogan slogan slogan slogan slogan slogan"
-    "enroll enroll enroll learnMore learnMore learnMore";
-  align-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.grid-container > div,
-a {
-  background-color: transparent;
+.mainBtn {
+  color: white;
+  background-color: blue;
+  padding: 0.5rem;
+  border: 1px solid white;
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 200px;
   text-align: center;
-  padding: 0;
-  font-size: 30px;
-  text-decoration: none;
+  font-size: 2rem;
+}
+
+.mainBtn:hover {
+  background-color: lightgreen;
+  border: 1px solid white;
+  transition: 200ms ease-in-out;
+  color: black;
 }
 
 // Media Queries //
 
 @media screen and (max-width: 320px) {
-  .enroll {
-    font-size: 1.8rem;
+  div.header {
+    font-size: 2rem;
+    text-align: center;
   }
-
-  .learnMore {
-    font-size: 1.8rem;
+  .slogan {
+    font-size: 1.5rem;
+    text-align: center;
   }
-
-  #showcase {
-    width: 100vw;
-    height: 70vh;
-    line-height: 80px;
-  }
-
-  .grid-container {
-    width: 100vw;
-    height: 80vh;
-    line-height: 70px;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-areas:
-      "header header header header header header"
-      "slogan slogan slogan slogan slogan slogan"
-      "enroll enroll enroll learnMore learnMore learnMore";
-    align-content: center;
+  .mainBtn {
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100px;
   }
 }
 
-@media screen and (min-width: 368px) {
-  .header {
-    font-size: 5rem !important;
+@media screen and (min-width: 321px) {
+  div.header {
+    font-size: 2.5rem;
+    text-align: center;
   }
-
-  .programHeader {
-    font-size: 6.5rem !important;
-  }
-
-  .enrollHeader {
-    font-size: 6.5rem !important;
-  }
-
-  .aboutHeader {
-    font-size: 6.5rem !important;
-  }
-
-  .tourHeader {
-    font-size: 6.5rem !important;
-  }
-
-  .costHeader {
-    font-size: 6.5rem !important;
-  }
-
   .slogan {
-    font-size: 4rem;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .mainBtn {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  div.header {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: -2rem;
+  }
+  .slogan {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .mainBtn {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
   }
 
-  .enroll {
-    font-size: 2.5rem;
-    margin: 0;
-    padding: 0;
+  div.costHeader {
+    font-size: 8rem;
   }
 
-  .learnMore {
-    font-size: 2.5rem;
+  div.enrollHeader {
+    font-size: 8rem;
+  }
+
+  div.aboutHeader {
+    font-size: 8rem;
+  }
+
+  div.tourHeader {
+    font-size: 8rem;
+  }
+
+  div.programHeader {
+    font-size: 8rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .header {
-    font-size: 6.5rem !important;
+  div.header {
+    font-size: 3.5rem;
+    margin-top: -1.5rem;
   }
 
   .slogan {
-    font-size: 5rem !important;
+    font-size: 3.2rem;
+    margin: 0;
   }
 
-  .enroll {
-    font-size: 3rem !important;
-  }
-
-  .learnMore {
-    font-size: 3rem !important;
+  .mainBtn {
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
   }
 
   .costHeader {
-    font-size: 11rem !important;
+    font-size: 11rem;
   }
 
   .enrollHeader {
-    font-size: 11rem !important;
+    font-size: 11rem;
   }
 
   .aboutHeader {
-    font-size: 11rem !important;
+    font-size: 11rem;
   }
 
   .tourHeader {
-    font-size: 11rem !important;
+    font-size: 11rem;
   }
 
   .programHeader {
-    font-size: 11rem !important;
+    font-size: 11rem;
   }
 
   // Programs Page Showcase //
   .programsShowcase {
-    font-size: 7rem;
+    font-size: 11rem;
   }
 
   // Tours Page Showcase //
@@ -320,5 +311,22 @@ a {
   // About Page Showcase //
   .aboutShowcase {
     font-size: 7rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  div.header {
+    font-size: 6rem;
+    text-align: center;
+    margin-top: -2rem;
+  }
+  .slogan {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .mainBtn {
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
   }
 }
