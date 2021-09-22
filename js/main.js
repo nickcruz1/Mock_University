@@ -30,6 +30,8 @@ for (i = 0; i < coll.length; i++) {
 
 
 // Next Semester Countdown // 
+function countDown() {
+
 var countDownDate = new Date("Jan 25, 2022 12:30:00").getTime();
 
 var x = setInterval(function() {
@@ -51,3 +53,4 @@ var x = setInterval(function() {
     document.getElementById("countDown").innerHTML = "The Semester Has Started";
   }
 }, 0);
+}

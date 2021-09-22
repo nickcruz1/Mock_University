@@ -11,7 +11,7 @@
 .bigfooterList {
   display: grid;
   justify-content: space-evenly;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -45,6 +45,7 @@
   list-style-type: none;
   text-decoration: none;
   font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 a {
@@ -173,5 +174,12 @@ a {
 
   .footerItemLink {
     font-size: 3.5rem;
+  }
+
+  .bigfooterList {
+    grid-template-columns: auto auto;
+  }
+  .footerList2 {
+    margin-top: 1rem;
   }
 }

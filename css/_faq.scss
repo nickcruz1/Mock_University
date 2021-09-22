@@ -6,6 +6,7 @@ div.content {
   background-color: transparent;
   color: black;
   text-align: center;
+  width: 500px;
 }
 
 .faqContent {
@@ -13,7 +14,17 @@ div.content {
   background-color: blue;
   margin-left: 25%;
   margin-right: 25%;
-  width: 50%;
+  width: 500px;
+}
+
+.collapsible {
+  color: darkgray;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+  margin: auto;
+  width: 500px;
 }
 
 #faqTitle {
@@ -27,7 +38,7 @@ div.content {
 
 .faqbigContainer {
   display: flex;
-  justify-content: center;
+  justify-content: center !important;
   background-color: white;
   padding-bottom: $smallSize;
   user-select: none;
@@ -43,7 +54,7 @@ div.content {
 .innerfaq {
   display: flex;
   justify-content: space-between;
-  margin-left: 25%;
+  margin-left: 15%;
   margin-right: 25%;
   width: 50%;
   flex: 100%;
@@ -56,16 +67,6 @@ div.content {
   background-color: blue;
   color: white !important;
   cursor: pointer;
-}
-
-.collapsible {
-  color: darkgray;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  text-align: left;
-  font-size: 15px;
-  width: 600px;
 }
 
 .collapsible:hover {
